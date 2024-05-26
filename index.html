@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PK Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/PK.png">
+
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/PK.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>ARTISTS</p>
+                <h1>Hey, We are <br>
+                    <span>PeiKay</span>!</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------about-------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                   <img src="images/about us.png" class="about-us-img"> 
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">ABOUT US</h1>
+                    <br>
+                    <p>Welcome to our creative space!</p>
+                    <br>
+                    <p align="justify">We are Kim Elquiero and Paolo Nicolas, a second-year students currently taking Bachelor of Science in Entertainment and Multimedia Computing, major in Digital Animation at Bicol State College of Applied Sciences and Technology.
+                       Our journey in the vibrant world of digital animation has been fueled by our unwavering resilience and dedication. As aspiring animators, we constantly strive to push the boundaries of our creativity and technical skills, embracing every challenge as an opportunity to learn and grow.
+                       We believe that hard work and perseverance are the keys to achieving excellence in our craft.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('artistic styles')">Artistic Styles</p>
+                        <p class="tab-links" onclick="opentab('technical skills')">Technical Skills</p>
+                        <p class="tab-links" onclick="opentab('creative process')">Creative Process</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="artistic styles">
+                        <ul>
+                            <li><span>Kim Elquiero</span><br>Kim's artistic style features vibrant colors, bold contrasts, and energetic compositions. <br>They often explore fantasy and adventure themes, creating imaginative worlds with playful yet meticulous detail.</li>
+                            <li><span>Paolo Nicolas</span><br>Paolo's style leans towards a more realistic and nuanced palette, focusing on the subtleties of light and shadow to create depth and emotion. His animations often center around human experiences and nature, conveying stories with a gentle, contemplative touch.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="technical skills">
+                        <ul>
+                            <li><span>Kim Elquiero</span><br>Kim excels in camera angles, cinematography, and artistic ideas, bringing a unique perspective and visual storytelling to their animations. Their proficiency in framing scenes and creating dynamic compositions enhances the narrative impact of their work.</li>
+                            <li><span>Paolo Nicolas</span><br>Paolo specializes in character design and has an exceptional attention to intricate details. His ability to create lifelike and expressive characters, combined with his skill in detailed texturing and modeling, brings a strong sense of realism and emotion to his animations.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="creative process">
+                        <ul>
+                            <li><span>Kim Elquiero</span><br>Kim's creative process is spontaneous and iterative, often starting with rough sketches and broad concepts before refining the details. They thrive in collaborative settings, drawing inspiration from team brainstorming sessions and feedback to enhance their projects.</li>
+                            <li><span>Paolo Nicolas</span><br>Paolo approaches his work with meticulous planning and structure, beginning with thorough research and detailed storyboards. He values a methodical workflow, ensuring each step is carefully executed and aligned with the overall vision of the project.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------Services-------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Our Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2><b>Character Designing</b></h2>
+                    <img src="images/character_design.jpg" alt="Character Designing Image">
+                    <p>We create unique and expressive character designs that bring your stories to life. Our characters are crafted with attention to detail and personality, making them memorable and impactful.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <h2><b>2D Animation</b></h2>
+                    <img src="images/2d_animation.jpg" alt="2D Animation Image">
+                    <p>Our 2D animation services provide dynamic and engaging animations that capture the essence of your narrative. We bring stories to life with smooth motion and captivating visuals. </p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <h2><b>3D Modeling</b></h2>
+                    <img src="images/3d_modeling.jpg" alt="3D Modeling Image">
+                    <p>We offer high-quality 3D modeling services to create detailed and realistic models. From characters to environments, our 3D models are designed to meet the highest standards of visual fidelity.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------Portfolio--------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Our Works</h1>
+            <div class="work-list">
+                <div class="work" onclick="toggleLayer(this)">
+                    <img src="images/work_1.png">
+                    <div class="layer">
+                        <h3>Title: <b>Sakura</b></h3>
+                        <h3>Artist: <b>Paolo Nicolas</b></h3>
+                        <p>2024, April 9</p>
+                    </div>
+                </div>
+                <div class="work" onclick="toggleLayer(this)">
+                    <img src="images/work_2.png">
+                    <div class="layer">
+                        <h3>Title: <b>Life in Sepia</b></h3>
+                        <h3>Artist: <b>Paolo Nicolas</b></h3>
+                        <p>2024, January 10</p>
+                    </div>
+                </div>
+                <div class="work" onclick="toggleLayer(this)">
+                    <img src="images/work_3.jpg">
+                    <div class="layer">
+                        <h3>Title: <b>Hydrokinesis</b></h3>
+                        <h3>Artist: <b>Paolo Nicolas</b></h3>
+                        <p>2024, January 22</p>
+                    </div>
+                </div>
+                <div class="work" onclick="toggleLayer(this)">
+                    <img src="images/work_4.jpg">
+                    <div class="layer">
+                        <h3>Title: <b>Miles</b></h3>
+                        <h3>Artist: <b>Kim Elquiero</b></h3>
+                        <p>2023, June </p>
+                    </div>
+                </div>
+            </div>
+            <div class="work-list">
+                <div class="work" onclick="toggleLayer(this)">
+                    <img src="images/work_5.jpg">
+                    <div class="layer">
+                        <h3>Title: <b>Día de San Valentín</b></h3>
+                        <h3>Artist: <b>Kim Elquiero</b></h3>
+                        <p>2024, Febuary 14</p>
+                    </div>
+                </div>
+                <div class="work" onclick="toggleLayer(this)">
+                    <img src="images/work_6.jpg">
+                    <div class="layer">
+                        <h3>Title: <b>Mahito</b></h3>
+                        <h3>Artist: <b>Kim Elquiero</b></h3>
+                        <p>2024, January 21</p>
+                    </div>
+                </div>
+                <div class="work" onclick="toggleLayer(this)">
+                    <img src="images/work_7.jpg">
+                    <div class="layer">
+                        <h3>Title: <b>Ethereal Reverie</b></h3>
+                        <h3>Artist: <b>Paolo NIcolas</b></h3>
+                        <p>2024, January 17</p>
+                    </div>
+                </div>
+                <div class="work" onclick="toggleLayer(this)">
+                    <img src="images/work_8.jpg">
+                    <div class="layer">
+                        <h3>Title: <b>A Walk to Remember(2002)</b></h3>
+                        <h3>Artist: <b>Paolo Nicolas</b></h3>
+                        <p>2024, January 25</p>
+                    </div>
+                </div>
+            </div>
+            <div class="work-list">
+                <div class="work" onclick="toggleLayer(this)">
+                    <img src="images/work_9.jpg">
+                    <div class="layer">
+                        <h3>Title: <b>Shibuya Chic</b></h3>
+                        <h3>Artist: <b>Paolo Nicolas</b></h3>
+                        <p>2024, January 14</p>
+                    </div>
+                </div>
+                <div class="work" onclick="toggleLayer(this)">
+                    <img src="images/work_10.png">
+                    <div class="layer">
+                        <h3>Title: <b>Where Is My Mind?</b></h3>
+                        <h3>Artist: <b>Kim Elquiero</b></h3>
+                        <p>2024, January 7</p>
+                    </div>
+                </div>
+                <div class="work" onclick="toggleLayer(this)">
+                    <img src="images/work_11.png">
+                    <div class="layer">
+                        <h3>Title: <b>Bakunawa</b></h3>
+                        <h3>Artist: <b>Kim Elquiero</b></h3>
+                        <p>2022, December 13</p>
+                    </div>
+                </div>
+                <div class="work" onclick="toggleLayer(this)">
+                    <img src="images/work_12.png">
+                    <div class="layer">
+                        <h3>Title: <b>ZOOM</b></h3>
+                        <h3>Artist: <b>Kim Elquiero</b></h3>
+                        <p>2023, May 31</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------contact------------>
+    <div id="contact">
+        <div class="contact">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Us</h1>
+                    <p><i class="fas fa-envelope"></i> ranzkeanelquiero@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> 0957501290</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100093033585204"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/suuitchii/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/suuwitchiii"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.pinterest.ph/ranzkeanelquiero/"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                    <p><i class="fas fa-envelope"></i> paolonicolas888@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> 09392340973</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100093263078424"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/art_chiveess/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/art_chiveee"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.pinterest.ph/Art_chive/"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        function toggleLayer(element) {
+            var layer = element.querySelector('.layer');
+            layer.classList.toggle('visible');
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        }
+    </script>
+</script>
+</body>
+</html>
